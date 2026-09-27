@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARNIMA | Nourish every day, Flourish every way</title>
+  <meta name="description" content="ARNIMA is a multi-sector enterprise featuring Arnima Agro, Arnima Healthcare, Arnima Beauty, Arnima Homecare, Arnima Foods, and Arnima Publications. Direct manufacturer pricing across India.">
+  <link rel="icon" type="image/jpeg" href="assets/arnima_logo.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Top Announcement Bar -->
+  <div class="top-ticker-bar">
+    <div id="top-ticker-content" class="ticker-content">
+      ARNIMA ANNOUNCEMENT: Direct Factory Margins Available Across Arnima Agro & Healthcare Divisions | Contact: +91 99087 84646
+    </div>
+  </div>
+
+  <!-- 2. Sticky Header & Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo-link" aria-label="ARNIMA Homepage">
+        <img src="assets/arnima_logo.jpg" alt="ARNIMA Official Logo" class="logo-img">
+        <div class="logo-text-group">
+          <span class="logo-brand-name">ARNIMA</span>
+          <span class="logo-tagline-text">Nourish every day, Flourish every way</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#sectors" class="nav-link">Our Sectors</a></li>
+          <li><a href="#products" class="nav-link">Products Catalog</a></li>
+          <li><a href="#distributor" class="nav-link">Wholesale & Dealers</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button id="cart-trigger" class="cart-btn-trigger" aria-label="Open Order Cart">
+        <span>Cart</span>
+        <span id="cart-count-badge" class="cart-badge-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 3. Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-header">
+        <span class="badge badge-gold">ARNIMA MULTI-SECTOR ENTERPRISE</span>
+        <h1>Nourish every day, Flourish every way</h1>
+        <p class="hero-subtitle">
+          Direct manufacturer supply across specialized divisions: Arnima Agro (Agricultural Inputs), Arnima Healthcare (Wellness & Herbal), Arnima Beauty (Botanical Skincare), and Arnima Homecare.
+        </p>
+      </div>
+
+      <!-- Centered Video Player Container -->
+      <div class="hero-video-wrapper">
+        <video id="hero-intro-video" class="hero-video-player" autoplay loop muted playsinline poster="assets/arnima_logo.jpg" aria-label="ARNIMA Brand Video">
+          <source src="assets/arnima_intro.mp4" type="video/mp4">
+          <!-- Fallback Visual Card -->
+          <div class="video-fallback-card">
+            <img src="assets/arnima_logo.jpg" alt="ARNIMA Official Logo" style="height: 90px; width: auto; margin-bottom: 1rem; border-radius: 6px;">
+            <h2 style="color: #ffffff; margin-bottom: 0.5rem;">ARNIMA Corporate Overview</h2>
+            <p style="color: #94a3b8; max-width: 500px; font-size: 0.95rem; margin-bottom: 1.5rem;">
+              Pioneering innovation across agriculture, healthcare, skincare, and household products.
+            </p>
+            <button class="btn btn-whatsapp" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+              Browse Products Catalog
+            </button>
+          </div>
+        </video>
+      </div>
+
+      <div class="hero-actions" style="justify-content: center; display: flex; gap: 1rem;">
+        <a href="#products" class="btn btn-primary">Browse Product Catalog</a>
+        <a href="#distributor" class="btn btn-outline">Become a Distributor</a>
+      </div>
+
+      <div class="hero-trust-bar">
+        <div class="trust-item">
+          <span>Direct Factory Pricing</span>
+        </div>
+        <div class="trust-item">
+          <span>Certified Quality Standards</span>
+        </div>
+        <div class="trust-item">
+          <span>WhatsApp Order Support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Featured Offers & Highlights Slider Section -->
+  <section class="offer-slider-section">
+    <div class="container">
+      <div class="offer-card-container">
+        <!-- Slide 1 -->
+        <div class="offer-slide active" data-index="0">
+          <div class="offer-slide-content">
+            <div class="offer-info">
+              <span class="badge badge-gold">ARNIMA AGRO SECTOR OFFER</span>
+              <h3>15% Additional Dealer Margin on Bio-Fungicides & Growth Promoters</h3>
+              <p class="offer-desc">
+                Direct factory pricing for stockists and wholesale dealers in the Arnima Agro sector. Valid for bulk orders placed this month.
+              </p>
+              <a href="https://wa.me/919908784646?text=Hi%20Arnima!%20I%20am%20interested%20in%20the%2015%25%20Additional%20Dealer%20Margin%20Offer." target="_blank" class="btn btn-whatsapp">
+                Claim Wholesale Offer on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="offer-slide" data-index="1">
+          <div class="offer-slide-content">
+            <div class="offer-info">
+              <span class="badge badge-primary">FREIGHT SHIPPING</span>
+              <h3>Free Freight Shipping on Wholesale Orders Above 50 Units</h3>
+              <p class="offer-desc">
+                Direct warehouse dispatch to your city stockist location across all Arnima product sectors.
+              </p>
+              <a href="https://wa.me/919908784646?text=Hi%20Arnima!%20I%20want%20to%20inquire%20about%20Free%20Freight%20Shipping%20for%20bulk%20orders." target="_blank" class="btn btn-whatsapp">
+                Inquire Transport Freight
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="offer-slide" data-index="2">
+          <div class="offer-slide-content">
+            <div class="offer-info">
+              <span class="badge badge-gold">ARNIMA HEALTHCARE & BEAUTY</span>
+              <h3>Herbal Immunity & Botanical Skincare Formulations Batch Live</h3>
+              <p class="offer-desc">
+                100% botanical formulations for personal care and daily wellness.
+              </p>
+              <a href="#products" class="btn btn-primary">
+                View Product Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="offer-nav-controls">
+          <button class="slider-arrow-btn" onclick="prevOfferSlide()" aria-label="Previous Slide">&lt;</button>
+          <span class="slider-dot active" onclick="goToOfferSlide(0)" role="button" aria-label="Slide 1"></span>
+          <span class="slider-dot" onclick="goToOfferSlide(1)" role="button" aria-label="Slide 2"></span>
+          <span class="slider-dot" onclick="goToOfferSlide(2)" role="button" aria-label="Slide 3"></span>
+          <button class="slider-arrow-btn" onclick="nextOfferSlide()" aria-label="Next Slide">&gt;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Our Sectors Showcase Section -->
+  <section id="sectors" class="section" style="background-color: var(--bg-alt);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <img src="assets/arnima_logo.jpg" alt="ARNIMA Brand Emblem" style="height: 60px; margin: 0 auto 1rem; border-radius: 6px;">
+        <h2 class="section-title">ARNIMA Product Sectors</h2>
+        <p class="section-desc">
+          ARNIMA operates specialized manufacturing divisions delivering quality products across key agricultural and consumer sectors.
+        </p>
+      </div>
+
+      <div class="sector-grid">
+        <div class="sector-card">
+          <h3 class="sector-card-title">Arnima Agro</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Insecticides, Fungicides, Herbicides, and Plant Growth Promoters formulated for high crop productivity.
+          </p>
+        </div>
+
+        <div class="sector-card">
+          <h3 class="sector-card-title">Arnima Healthcare</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Herbal supplements, immunity boosters, and botanical vitality drops for health management.
+          </p>
+        </div>
+
+        <div class="sector-card">
+          <h3 class="sector-card-title">Arnima Beauty</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Botanical facial cleansers, herbal skincare formulations, and natural personal care products.
+          </p>
+        </div>
+
+        <div class="sector-card">
+          <h3 class="sector-card-title">Arnima Homecare</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Eco-friendly disinfectant liquids and neem-based household cleaning formulations.
+          </p>
+        </div>
+
+        <div class="sector-card">
+          <h3 class="sector-card-title">Arnima Foods & Fitness</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Organic nutrition powders and home physical conditioning exercise resistance gear.
+          </p>
+        </div>
+
+        <div class="sector-card">
+          <h3 class="sector-card-title">Arnima Publications</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Practical handbooks on organic farming methodologies and agricultural crop schedules.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Interactive Product Catalog Section -->
+  <section id="products" class="section">
+    <div class="container">
+      <h2 class="section-title">Explore Our Products Catalog</h2>
+      <p class="section-desc">
+        Select products across all Arnima sectors, specify your required pack size and quantity, and order directly via WhatsApp.
+      </p>
+
+      <!-- Category Filter Tabs -->
+      <div id="category-tabs" class="category-tabs" role="tablist" aria-label="Product Category Tabs">
+        <button class="tab-btn active" data-category="all" role="tab">All Products</button>
+        <button class="tab-btn" data-category="agro" role="tab">Arnima Agro</button>
+        <button class="tab-btn" data-category="crop-protection" role="tab">Crop Protection</button>
+        <button class="tab-btn" data-category="wellness" role="tab">Arnima Healthcare</button>
+        <button class="tab-btn" data-category="personal-home" role="tab">Arnima Beauty & Home</button>
+        <button class="tab-btn" data-category="food-fitness" role="tab">Foods & Fitness</button>
+        <button class="tab-btn" data-category="books" role="tab">Arnima Publications</button>
+      </div>
+
+      <!-- Product Cards Container -->
+      <div id="product-grid" class="product-grid">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Wholesale & Distributor Inquiry Section -->
+  <section id="distributor" class="section" style="background-color: var(--primary); color: #ffffff;">
+    <div class="container" style="max-width: 800px; text-align: center;">
+      <span class="badge badge-gold" style="margin-bottom: 1rem;">WHOLESALE REGISTRATION</span>
+      <h2 style="color: #ffffff; font-size: 2.2rem; margin-bottom: 1rem;">Become an Authorized ARNIMA Distributor</h2>
+      <p style="color: #e2e8f0; margin-bottom: 2rem; font-size: 1rem;">
+        Are you a wholesale dealer, retailer, or stockist? Partner with ARNIMA to receive direct factory rates, technical data sheets, and priority transport shipping.
+      </p>
+
+      <form id="distributor-form" style="background: #ffffff; color: var(--text-dark); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); text-align: left;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <label for="dealer-name" style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.3rem;">Full Name *</label>
+            <input type="text" id="dealer-name" required placeholder="e.g. Rajesh Kumar" style="width: 100%; padding: 0.65rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+          </div>
+          <div>
+            <label for="dealer-business" style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.3rem;">Business / Agency Name *</label>
+            <input type="text" id="dealer-business" required placeholder="e.g. Kisan Agency" style="width: 100%; padding: 0.65rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <label for="dealer-phone" style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.3rem;">Phone / WhatsApp Number *</label>
+            <input type="tel" id="dealer-phone" required placeholder="+91 99087 84646" style="width: 100%; padding: 0.65rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+          </div>
+          <div>
+            <label for="dealer-location" style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.3rem;">City / District & State *</label>
+            <input type="text" id="dealer-location" required placeholder="e.g. Guntur, Andhra Pradesh" style="width: 100%; padding: 0.65rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.2rem;">
+          <label for="dealer-interest" style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.3rem;">Product Sector of Interest</label>
+          <select id="dealer-interest" style="width: 100%; padding: 0.65rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+            <option value="Arnima Agro (Agricultural Inputs & Crop Protection)">Arnima Agro (Agricultural Inputs & Crop Protection)</option>
+            <option value="Arnima Healthcare & Beauty">Arnima Healthcare & Beauty</option>
+            <option value="All ARNIMA Sectors (Agro + Consumer)">All ARNIMA Sectors (Agro + Consumer)</option>
+          </select>
+        </div>
+
+        <!-- Explicit Data Processing Consent under India DPDP Act 2023 -->
+        <div style="margin-bottom: 1.5rem; font-size: 0.8rem; color: var(--text-muted); display: flex; gap: 0.5rem; align-items: flex-start;">
+          <input type="checkbox" id="dealer-dpdp-consent" required style="margin-top: 3px;">
+          <label for="dealer-dpdp-consent">
+            I explicitly consent to ARNIMA processing my contact information strictly for responding to this wholesale dealership inquiry under India's Digital Personal Data Protection (DPDP) Act 2023. Read our <a href="privacy-policy.html" target="_blank" style="color: var(--primary); text-decoration: underline;">Privacy Policy</a>.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-whatsapp" style="width: 100%; font-size: 1rem;">
+          Submit Wholesale Inquiry via WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 8. Dedicated Contact Us Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-desc">
+        Contact ARNIMA for wholesale dealer rates, product technical specifications, or dealership inquiries.
+      </p>
+
+      <div class="contact-grid">
+        <!-- Phone Card -->
+        <div class="contact-card">
+          <h3 class="contact-card-title">Call Us Directly</h3>
+          <p style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">+91 99087 84646</p>
+          <a href="tel:9908784646" class="btn btn-outline" style="width: 100%;">
+            Tap to Call
+          </a>
+        </div>
+
+        <!-- WhatsApp Card -->
+        <div class="contact-card">
+          <h3 class="contact-card-title">Instant WhatsApp Sales</h3>
+          <p style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">+91 99087 84646</p>
+          <a href="https://wa.me/919908784646?text=Hi%20Arnima!%20I%20have%20a%20query." target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <!-- Email Card -->
+        <div class="contact-card">
+          <h3 class="contact-card-title">Official Email Support</h3>
+          <p style="font-size: 1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">arnima4646@gmail.com</p>
+          <a href="mailto:arnima4646@gmail.com" class="btn btn-outline" style="width: 100%;">
+            Send Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Cart Drawer (Slide-Over Modal) -->
+  <div id="cart-overlay" class="cart-drawer-overlay"></div>
+  <aside id="cart-drawer" class="cart-drawer" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <img src="assets/arnima_logo.jpg" alt="ARNIMA Logo" style="height: 24px; border-radius: 3px;">
+        <h3>Your Order - ARNIMA</h3>
+      </div>
+      <button id="cart-close" class="cart-close-btn" aria-label="Close Shopping Cart">&times;</button>
+    </div>
+
+    <div id="cart-body" class="cart-body">
+      <!-- Items dynamically populated via app.js -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-buyer-type">
+        <label for="buyer-type-select">I am ordering as a:</label>
+        <select id="buyer-type-select" class="cart-buyer-select">
+          <option value="Individual Buyer (B2C)">Individual Buyer</option>
+          <option value="Wholesale Distributor / Stockist (B2B)">Wholesale Distributor / Stockist</option>
+        </select>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; font-weight: 700; font-size: 1.1rem; color: var(--primary); background: #ffffff; padding: 0.6rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+        <span>Estimated Total:</span>
+        <span id="cart-total-amount" style="color: var(--secondary); font-size: 1.2rem;">Rs.0</span>
+      </div>
+
+      <button id="send-whatsapp-order" class="btn btn-whatsapp" style="width: 100%;">
+        Place Order on WhatsApp (+91 99087 84646)
+      </button>
+    </div>
+  </aside>
+
+  <!-- 10. Cookie Consent Banner -->
+  <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #0f172a; color: #ffffff; padding: 1rem; z-index: 3000; box-shadow: var(--shadow-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem;">
+    <div>
+      We use strictly essential browser storage to save your cart selections. Read our <a href="cookie-policy.html" style="color: var(--accent); text-decoration: underline;">Cookie Policy</a> and <a href="privacy-policy.html" style="color: var(--accent); text-decoration: underline;">Privacy Policy</a>.
+    </div>
+    <button id="accept-cookies-btn" class="btn btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8rem;">
+      Accept Essential Storage
+    </button>
+  </div>
+
+  <!-- 11. Legal Footer -->
+  <footer style="background-color: #0f172a; color: #94a3b8; padding: 3rem 0 1.5rem;">
+    <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem;">
+          <img src="assets/arnima_logo.jpg" alt="ARNIMA Official Logo" style="height: 36px; border-radius: 4px;">
+          <span style="color: #ffffff; font-weight: 700; font-size: 1.1rem;">ARNIMA</span>
+        </div>
+        <p style="font-size: 0.85rem; font-style: italic; color: var(--accent); margin-bottom: 1rem;">"Nourish every day, Flourish every way"</p>
+        <p style="font-size: 0.85rem;">Multi-sector enterprise encompassing Arnima Agro, Arnima Healthcare, Arnima Beauty, Arnima Homecare, Arnima Foods, and Arnima Publications.</p>
+      </div>
+
+      <div>
+        <h4 style="color: #ffffff; margin-bottom: 0.8rem;">Navigation</h4>
+        <ul style="list-style: none; font-size: 0.85rem; line-height: 2;">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sectors">Our Sectors</a></li>
+          <li><a href="#products">Products Catalog</a></li>
+          <li><a href="#distributor">Wholesale Opportunities</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="color: #ffffff; margin-bottom: 0.8rem;">Legal & Compliance</h4>
+        <ul style="list-style: none; font-size: 0.85rem; line-height: 2;">
+          <li><a href="privacy-policy.html">Privacy Policy (DPDP Act)</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          <li><a href="refund-policy.html">Refund & Return Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="color: #ffffff; margin-bottom: 0.8rem;">Contact Details</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 0.4rem;">Mobile: +91 99087 84646</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0.4rem;">WhatsApp: +91 99087 84646</p>
+        <p style="font-size: 0.85rem;">Email: arnima4646@gmail.com</p>
+      </div>
+    </div>
+
+    <div style="border-top: 1px solid #1e293b; padding-top: 1.5rem; text-align: center; font-size: 0.8rem;">
+      &copy; 2026 ARNIMA. All Rights Reserved. Compliant with India's DPDP Act 2023.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

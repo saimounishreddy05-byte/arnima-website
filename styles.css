@@ -1,0 +1,765 @@
+/* ==========================================================================
+   Arnima - Parent Enterprise & Sectors Stylesheet
+   Parent Company: ARNIMA
+   Sectors: Arnima Agro, Arnima Healthcare, Arnima Beauty, Arnima Homecare, etc.
+   Brand Tagline: "Nourish every day, Flourish every way"
+   ========================================================================== */
+
+/* 1. Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap');
+
+/* 2. CSS Design Tokens */
+:root {
+  /* Official Brand Colors */
+  --primary: #004fb6;         /* Corporate Royal Blue */
+  --primary-hover: #003780;
+  --secondary: #008f75;       /* Deep Forest Green */
+  --accent: #00b391;          /* Cyan Green Accent */
+  --accent-light: #f0fbf8;    /* Subtle Tint */
+
+  /* Neutral Tones */
+  --bg-main: #f8fafc;         /* Clean background */
+  --bg-surface: #ffffff;      /* Surface card background */
+  --bg-alt: #edf2f7;          /* Subtle section background */
+  --text-dark: #0f172a;       /* Dark navy text */
+  --text-muted: #475569;      /* Secondary text */
+  --border-color: #cbd5e1;    /* Solid border */
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Layout & Spacing */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --transition: all 0.2s ease-in-out;
+  --max-width: 1200px;
+}
+
+/* 3. Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  line-height: 1.5;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--primary);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-body);
+  transition: var(--transition);
+}
+
+/* 4. Top Announcement Bar */
+.top-ticker-bar {
+  background: var(--primary);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* 5. Utility Components */
+.container {
+  width: 92%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.badge-primary {
+  background-color: var(--bg-alt);
+  color: var(--primary);
+  border: 1px solid var(--border-color);
+}
+
+.badge-gold {
+  background-color: #fff9ed;
+  color: #925f18;
+  border: 1px solid #faedcd;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.4rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.btn-whatsapp {
+  background-color: #16a34a;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn-whatsapp:hover {
+  background-color: #15803d;
+}
+
+/* 6. Header & Navigation */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  padding: 0.75rem 0;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-img {
+  height: 46px;
+  width: auto;
+  border-radius: var(--radius-sm);
+  object-fit: contain;
+}
+
+.logo-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-brand-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: -0.3px;
+  line-height: 1.1;
+}
+
+.logo-tagline-text {
+  font-size: 0.7rem;
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.cart-btn-trigger {
+  background: var(--bg-alt);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.cart-btn-trigger:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.cart-badge-count {
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius-sm);
+}
+
+.cart-btn-trigger:hover .cart-badge-count {
+  background-color: #ffffff;
+  color: var(--primary);
+}
+
+/* 7. Hero Section */
+.hero {
+  position: relative;
+  padding: 3rem 0;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.hero-header {
+  max-width: 800px;
+  margin: 0 auto 1.8rem;
+}
+
+.hero-header h1 {
+  font-size: 2.5rem;
+  margin: 0.6rem 0;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* Centered Video Player Container */
+.hero-video-wrapper {
+  max-width: 850px;
+  margin: 0 auto 2rem;
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  background: #0f172a;
+}
+
+.hero-video-player {
+  width: 100%;
+  max-height: 480px;
+  display: block;
+  object-fit: cover;
+}
+
+.video-fallback-card {
+  padding: 3rem 1.5rem;
+  background: #0f172a;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+}
+
+.hero-trust-bar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.8rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* 8. Offer Slider Section */
+.offer-slider-section {
+  padding: 2rem 0;
+  background: var(--bg-main);
+}
+
+.offer-card-container {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  padding: 1.8rem 2rem;
+}
+
+.offer-slide {
+  display: none;
+}
+
+.offer-slide.active {
+  display: block;
+}
+
+.offer-info h3 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin: 0.4rem 0;
+}
+
+.offer-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.offer-nav-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.slider-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-sm);
+  background: var(--border-color);
+  cursor: pointer;
+}
+
+.slider-dot.active {
+  background: var(--primary);
+  width: 18px;
+}
+
+.slider-arrow-btn {
+  background: var(--bg-alt);
+  color: var(--text-dark);
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+  border: 1px solid var(--border-color);
+}
+
+.slider-arrow-btn:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+/* 9. Sectors Grid */
+.sector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.sector-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.sector-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+/* 10. Catalog & Filter Tabs */
+.section {
+  padding: 3.5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 0.4rem;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.section-desc {
+  text-align: center;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  font-size: 0.95rem;
+}
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.tab-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.tab-btn.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+/* 11. Product Cards Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  border-color: var(--primary);
+}
+
+.product-img-wrapper {
+  position: relative;
+  height: 140px;
+  background: var(--bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.product-img-placeholder-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.product-badge-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.product-price-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: var(--primary);
+  color: #ffffff;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.product-info {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+  color: var(--primary);
+}
+
+.product-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.product-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.product-pack {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  background: var(--bg-alt);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.qty-btn {
+  background: var(--bg-alt);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.qty-btn:hover {
+  background: var(--border-color);
+}
+
+.qty-val {
+  width: 32px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* 12. Contact Cards Section */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 1.8rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-card:hover {
+  border-color: var(--primary);
+}
+
+.contact-card-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: var(--primary);
+}
+
+/* 13. Slide-Over Cart Drawer */
+.cart-drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.4);
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.cart-drawer-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -420px;
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  background: #ffffff;
+  z-index: 2001;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.cart-drawer.active {
+  right: 0;
+}
+
+.cart-header {
+  padding: 1.25rem 1.5rem;
+  background: var(--primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-header h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.cart-close-btn {
+  background: transparent;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.cart-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.cart-empty-msg {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  align-items: center;
+}
+
+.cart-item-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--primary);
+}
+
+.cart-item-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.cart-footer {
+  padding: 1.5rem;
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border-color);
+}
+
+.cart-buyer-type {
+  margin-bottom: 1rem;
+}
+
+.cart-buyer-type label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--text-dark);
+}
+
+.cart-buyer-select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  font-family: var(--font-body);
+}
+
+/* 14. Responsive Breakpoints */
+@media (max-width: 900px) {
+  .hero-header h1 {
+    font-size: 2rem;
+  }
+  .nav-links {
+    display: none;
+  }
+}
